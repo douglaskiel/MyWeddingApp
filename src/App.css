@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #f7f5f6;
+  color: #360b4f;
+  font-family: 'Dancing Script', serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%; }
+
+#app {
+  width: 100%; }
+
+.display-list,
+.flex-wrapper,
+.list-item,
+.form-container,
+.rsvp-list {
+  display: flex; }
+
+.flex-wrapper,
+.form-container,
+.list-item,
+.display-list, .rsvp-list {
+  align-items: center; }
+
+.rsvp-list {
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px; }
+  .rsvp-list h2,
+  .rsvp-list h4 {
+    letter-spacing: 1px;
+    align-self: left;
+    margin: 8px; }
+
+.flex-wrapper {
+  justify-content: space-around;
+  width: 70%;
+  margin-top: 30px; }
+
+.form-container {
+  align-self: flex-start;
+  margin-bottom: 20px; }
+
+button,
+input {
+  border: none;
+  outline: none;
+  font-family: Dancing Script, serif; }
+
+input {
+  height: 260px;
+  width: 30px;
+  padding-left: 10px;
+  background: none;
+  color: #1955da;
+  font-size: 15px;
+  border: 1px solid #360b4f;
+  border-radius: 2px; }
+  input:focus {
+    background: white; }
+
+button {
+  width: 32px;
+  height: 32px;
+  margin: 4px;
+  background: #1955da;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all;
+  border-radius: 2px; }
+  button:disabled {
+    background: #6A041D;
+    opacity: 0.8;
+    transition: 0.3s all; }
+
+.close {
+  width: 15px;
+  height: 15px;
+  background: #1d5be5;
+  cursor: pointer;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  color: white;
+  font-size: 16px; }
+
+.list-item {
+  margin: 10px 0;
+  color: #360b4f;
+  justify-content: space-between;
+  padding: 5px 10px;
+  width: 300px; }
+  .list-item:hover {
+    transition: 0.7s all ease;
+    color: #1955da;
+    animation: 0.4s bounce infinite; }
+
+.list-anim-enter {
+  opacity: 0;
+  transition: 500ms all ease; }
+
+.list-anim-enter-active {
+  opacity: 1;
+  transition: 500ms all ease;
+  transform: rotateX(360deg); }
+
+.list-anim-leave {
+  opacity: 1;
+  transition: 500ms all ease; }
+
+.list-anim-leave-active {
+  opacity: 0;
+  transition: 500ms all ease;
+  transform: translateX(20px); }
+
+.display-list {
+  flex-direction: column;
+  justify-content: center;
+  width: 50%; }
+
+h5 {
+  margin-bottom: 6px; }
+
+/*animation for list-item hover*/
+@keyframes bounce {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(3px); }
+  100% {
+    transform: translateY(0px); } }
+.people-list {
+  margin: 20px; }
+
+/*# sourceMappingURL=app.css.map */

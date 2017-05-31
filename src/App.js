@@ -3,6 +3,7 @@
 // we have to find react, and assign it to that very variable "React";
 import React, { Component } from 'react';
 // import './App.css';
+import RSVPList from './components/rsvp_list';
 
 
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-        Hi!
+          <RSVPList />
         </div>
       </div>
     );
